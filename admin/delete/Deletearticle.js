@@ -1,4 +1,8 @@
 
+var url_string = window.location.href
+var url = new URL(url_string);
+var upid = url.searchParams.get("id");
+document.getElementById("mainid").value=upid;
 
 
   document.getElementById("getvalue").onclick = function() {

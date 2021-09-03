@@ -68,10 +68,12 @@
 					<th>ARTICLE ID</th>
 					<th>STATUS</th>
 					<th>TIME</th>
+					<th>EDIT</th>
 				  </tr>
 				</thead>
 				<tbody id="tabbody">
 				  <tr>
+					<td>WAIT</td>
 					<td>WAIT</td>
 					<td>WAIT</td>
 					<td>WAIT</td>
@@ -106,6 +108,9 @@
 		let html=``;
     snapshot.forEach(function(childSnapshot) {
 		let articlereurl=document.getElementById("homepage").href+"q/?q="+childSnapshot.val().articldid;
+		let upldateurl="./update/?id="+childSnapshot.val().articldid;
+		let deleteurl="./delete/?id="+childSnapshot.val().articldid;
+
 		html+=`
 		<tr>
 					<td>`+childSnapshot.val().adminid+`</td>
@@ -113,12 +118,14 @@
 					<td><a href="`+articlereurl+`" target="_blank">`+childSnapshot.val().articldid+`</a></td>
 					<td>`+childSnapshot.val().status+`</td>
 					<td>`+childSnapshot.val().time+`</td>
+					<td><a target="_blank" href="`+upldateurl+`">UPDATE</a> <br><a target="_blank" href="`+deleteurl+`">DELETE</a></td>
 				  </tr>
 		`;
     });
 	if(html==``){
 		html+=`
 		<tr>
+					<td>NO DATA FOUND</td>
 					<td>NO DATA FOUND</td>
 					<td>NO DATA FOUND</td>
 					<td>NO DATA FOUND</td>

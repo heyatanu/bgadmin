@@ -17,6 +17,10 @@ var discription=document.getElementById("discription");
 var msgfromauthor=document.getElementById("msgfromauthor");
 var imageurl=document.getElementById("imageurl");
 
+var url_string = window.location.href
+var url = new URL(url_string);
+var upid = url.searchParams.get("id");
+document.getElementById("mainid").value=upid;
 
 
 
@@ -42,7 +46,7 @@ db.collection('admin').get().then((snapshot) => {
         ytubevdolink:ytubevdolink.value,
         expiredate:expiredate.value,
         discription:discription.value,
-        msgfromauth:msgfromauth.value,
+        msgfromauth:msgfromauthor.value,
         imageurl:imageurl.value
     });
 
