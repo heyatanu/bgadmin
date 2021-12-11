@@ -1,88 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="./../../assets/images/favicon.ico">
-<title>ADMIN || UPLOAD</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
-<link href="./../../assets/css/theme.css" rel="stylesheet">
-<!-- Begin tracking codes here, including ShareThis/Analytics -->
-    
-<!-- End tracking codes here, including ShareThis/Analytics -->
-</head>
-<body class="layout-page" >
-<!-- Begin Menu Navigation
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./../../assets/images/favicon.ico">
+    <title>ADMIN || GENERATE IMG LINK</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="./../../assets/css/theme.css" rel="stylesheet">
+    <!-- Begin tracking codes here, including ShareThis/Analytics -->
+    <!-- End tracking codes here, including ShareThis/Analytics -->
+  </head>
+  <body class="layout-page">
+    <!-- Begin Menu Navigation
 ================================================== -->
-
-<!-- End Menu Navigation
+    <!-- End Menu Navigation
 ================================================== -->
-<div class="site-content" style="padding: 0; margin: 30px;">
-	<div class="container">
-		<!-- Content (replace with your e-mail address below)
+    <div class="site-content" style="padding: 0; margin: 30px;">
+      <div class="container">
+        <!-- Content (replace with your e-mail address below)
     ================================================== -->
-		<div class="main-content">
-			<section>
-			<div class="section-title">
-				<h2><span>Generate Image Link</span></h2>
-			</div>
-			<div class="article-post">
-				<p id="imageuploadstatus">No image selected</p>
-				<button class="btn btn-success" id="select" style="margin-bottom: 10px;">Select Image</button>
-
-
-					<div class="form-group row">
-						<div class="col-md-12">
-							<label >Your Image URL</label>
-							<input class="form-control" type="text" id="urllink" placeholder="Image link" readonly>
-						</div>
-
-					</div>
-
-					<div class="form-group row">
-
-						<div class="col-md-6">
-							<input class="form-control" type="text" id="imagename" placeholder="Image Name" readonly>
-						</div>
-					</div>
-
-
-					
-					
-					<input class="btn btn-success" type="submit" id="upload" value="Upload this article">
-					<input class="btn btn-success" type="submit" onclick="copylink()" value="Copy the link">
-
-				<!-- </form> -->
-			</div>
-			</section>
-		</div>
-	</div>
-	<!-- /.container -->
-
-
-</div>
-<!-- JavaScript
+        <div class="main-content">
+          <section>
+            <div class="section-title">
+              <h2>
+                <span>Generate Image Link</span>
+              </h2>
+            </div>
+            <a href="./../" class="btn btn-danger" target="_blank">HOME</a>
+            <div class="article-post">
+              <p id="imageuploadstatus">No image selected</p>
+              <button class="btn btn-success" id="select" style="margin-bottom: 10px;">Select Image</button>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label>Your Image URL</label>
+                  <input class="form-control" type="text" id="urllink" placeholder="Image link" readonly>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <input class="form-control" type="text" id="imagename" placeholder="Image Name" readonly>
+                </div>
+              </div>
+              <input class="btn btn-success" type="submit" id="upload" value="Upload this">
+              <input class="btn btn-success" type="submit" onclick="copylink()" value="Copy the link">
+              <!-- </form> -->
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- JavaScript
 ================================================== -->
-<script src="./../../assets/js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="./../../assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="./../../assets/js/masonry.pkgd.min.js"></script>
-<script src="./../../assets/js/theme.js"></script>
-	<!-- ------------------------LIBRARIES------------------------------------------------->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<!-- ------------------------FIRBASE LIBRARIES------------------------------------------------->
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-	<script src="./../InitializeFirebase.js"></script>
-	<script src="./SelectAndUplodeFile.js"></script>
-
-</body>
+    <script src="./../../assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="./../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./../../assets/js/masonry.pkgd.min.js"></script>
+    <script src="./../../assets/js/theme.js"></script>
+    <!-- ------------------------LIBRARIES------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- ------------------------FIRBASE LIBRARIES------------------------------------------------->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="./../InitializeFirebase.js"></script>
+    <script src="./SelectAndUplodeFile.js"></script>
+  </body>
 </html>

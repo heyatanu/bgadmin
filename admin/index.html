@@ -1,143 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="./../assets/images/favicon.ico">
-<title>ADMIN PANEL</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
-<link href="./../assets/css/theme.css" rel="stylesheet">
-<!-- Begin tracking codes here, including ShareThis/Analytics -->
-    
-<!-- End tracking codes here, including ShareThis/Analytics -->
-</head>
-<body class="layout-page">
-<!-- Begin Menu Navigation
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./../assets/images/favicon.ico">
+    <title>ADMIN PANEL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="./../assets/css/theme.css" rel="stylesheet">
+    <!-- Begin tracking codes here, including ShareThis/Analytics -->
+    <!-- End tracking codes here, including ShareThis/Analytics -->
+  </head>
+  <body class="layout-page">
+    <!-- Begin Menu Navigation
 ================================================== -->
-<a href="./../" style="display: none;" id="homepage">HOMEPAGE</a>
-<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="container">
-	<!-- Begin Logo -->
-	<a class="navbar-brand" href="./../">
-	<img src="./../assets/images/logo.png"  width="10%">
-	</a>
-	<!-- End Logo -->
-	<!-- Begin Menu -->
-	<div class="collapse navbar-collapse" id="navbarsWow">
-		<!-- Begin Menu -->
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-			<a class="nav-link" href="./../">Home</a>
-			</li>
+    <a href="./../" style="display: none;" id="homepage">HOMEPAGE</a>
+    <header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="./../">
+          <img src="./../assets/images/logo.png" width="10%">
+        </a>
+        <!-- End Logo -->
+        <!-- Begin Menu -->
+        <div class="collapse navbar-collapse" id="navbarsWow">
+          <!-- Begin Menu -->
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-			<a class="nav-link" href="./upload/">Upload Article</a>
-			</li>
-			<li class="nav-item">
-			<a class="nav-link" href="./update/">Update Article</a>
-			</li>
-			<li class="nav-item">
-			<a class="nav-link" href="./delete/">Delete Article</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="./generateimagelink/">Generate Image Link</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="./recommended/">Recommended</a>
-			</li>
-		</ul>
-		<!-- End Menu -->
-	</div>
-</div>
-</header>
-<!-- End Menu Navigation
+              <a class="nav-link" href="./../">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./upload/">Upload Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./update/">Update Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./delete/">Delete Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./generateimagelink/">Generate Image Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./recommended/">Recommended</a>
+            </li>
+          </ul>
+          <!-- End Menu -->
+        </div>
+      </div>
+    </header>
+    <!-- End Menu Navigation
 ================================================== -->
-<div class="site-content">
-	<div class="container">
-		<h5>Log table</h5>
-		<div class="main-content">
-			<table class="table table-bordered table-striped table-responsive">
-				<thead>
-				  <tr>
-					<th>ID</th>
-					<th>NAME</th>
-					<th>ARTICLE ID</th>
-					<th>STATUS</th>
-					<th>TIME</th>
-					<th>EDIT</th>
-				  </tr>
-				</thead>
-				<tbody id="tabbody">
-				  <tr>
-					<td>WAIT</td>
-					<td>WAIT</td>
-					<td>WAIT</td>
-					<td>WAIT</td>
-					<td>WAIT</td>
-					<td>WAIT</td>
-				  </tr>
-				</tbody>
-			  </table>
-		</div>
-	</div>
-</div>
-</div>
-<!-- JavaScript
+    <div class="site-content">
+      <div class="container">
+        <h5>Log table</h5>
+        <div class="main-content">
+          <table class="table table-bordered table-striped table-responsive">
+            <thead>
+              <tr>
+                <th>ADMIN ID</th>
+                <th>ADMIN NAME</th>
+                <th>ARTICLE ID</th>
+                <th>STATUS</th>
+                <th>DATE TIME</th>
+                <th>OPTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="tabbody">
+              <tr>
+                <td>WAIT</td>
+                <td>WAIT</td>
+                <td>WAIT</td>
+                <td>WAIT</td>
+                <td>WAIT</td>
+                <td>WAIT</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- JavaScript
 ================================================== -->
-
-<script src="./../assets/js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="./../assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="./../assets/js/masonry.pkgd.min.js"></script>
-<script src="./../assets/js/theme.js"></script>
-	<!-- ------------------------FIRBASE LIBRARIES------------------------------------------------->
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-<script src="./../InitializeFirebase.js"></script>
-<script>
-	firebase.database().ref('updates/').once('value', function(snapshot) {
-		let html=``;
-    snapshot.forEach(function(childSnapshot) {
-		let articlereurl=document.getElementById("homepage").href+"q/?q="+childSnapshot.val().articldid;
-		let upldateurl="./update/?id="+childSnapshot.val().articldid;
-		let deleteurl="./delete/?id="+childSnapshot.val().articldid;
-
-		html+=`
-		<tr>
-					<td>`+childSnapshot.val().adminid+`</td>
-					<td>`+childSnapshot.val().name+`</td>
-					<td><a href="`+articlereurl+`" target="_blank">`+childSnapshot.val().articldid+`</a></td>
-					<td>`+childSnapshot.val().status+`</td>
-					<td>`+childSnapshot.val().time+`</td>
-					<td><a target="_blank" href="`+upldateurl+`">UPDATE</a> <br><a target="_blank" href="`+deleteurl+`">DELETE</a></td>
-				  </tr>
+    <script src="./../assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="./../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./../assets/js/masonry.pkgd.min.js"></script>
+    <script src="./../assets/js/theme.js"></script>
+    <!-- ------------------------FIRBASE LIBRARIES------------------------------------------------->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="./../InitializeFirebase.js"></script>
+    <script>
+      firebase.database().ref('updates/').once('value', function(snapshot) {
+        let html = ``;
+        snapshot.forEach(function(childSnapshot) {
+          let articlereurl = document.getElementById("homepage").href + "q/?q=" + childSnapshot.val().articldid;
+          let upldateurl = "./update/?id=" + childSnapshot.val().articldid;
+          let deleteurl = "./delete/?id=" + childSnapshot.val().articldid;
+          let status = childSnapshot.val().status;
+          status = status.toLowerCase();
+          if (status != "delete") {
+            html += `
+		
+										<tr>
+											<td>` + childSnapshot.val().adminid + `</td>
+											<td>` + childSnapshot.val().name + `</td>
+											<td>
+												<a href="` + articlereurl + `" target="_blank">` + childSnapshot.val().articldid + `</a>
+											</td>
+											<td>` + childSnapshot.val().status + `</td>
+											<td>` + childSnapshot.val().time + `</td>
+											<td>
+												<a target="_blank" href="` + upldateurl + `">UPDATE</a>
+												<br>
+													<a target="_blank" href="` + deleteurl + `">DELETE</a>
+												</td>
+											</tr>
 		`;
-    });
-	if(html==``){
-		html+=`
-		<tr>
-					<td>NO DATA FOUND</td>
-					<td>NO DATA FOUND</td>
-					<td>NO DATA FOUND</td>
-					<td>NO DATA FOUND</td>
-					<td>NO DATA FOUND</td>
-					<td>NO DATA FOUND</td>
-				  </tr>
+          } else {
+            html += `
+		
+											<tr>
+												<td>` + childSnapshot.val().adminid + `</td>
+												<td>` + childSnapshot.val().name + `</td>
+												<td>` + childSnapshot.val().articldid + `</td>
+												<td>` + childSnapshot.val().status + `</td>
+												<td>` + childSnapshot.val().time + `</td>
+												<td>N/A</td>
+											</tr>
 		`;
-	}
-	document.getElementById("tabbody").innerHTML=html;
-
-});
-
-</script>
-</body>
+          }
+        });
+        if (html == ``) {
+          html += `
+		
+											<tr>
+												<td>NO DATA FOUND</td>
+												<td>NO DATA FOUND</td>
+												<td>NO DATA FOUND</td>
+												<td>NO DATA FOUND</td>
+												<td>NO DATA FOUND</td>
+												<td>NO DATA FOUND</td>
+											</tr>
+		`;
+        }
+        document.getElementById("tabbody").innerHTML = html;
+      });
+    </script>
+  </body>
 </html>
